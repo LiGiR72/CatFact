@@ -14,18 +14,18 @@ public class CatFact {
         this.user = user;
         this.upvotes = upvotes;
     }
-    @Override
-    public String toString(){
-
-        return("{ id = " + id +
-                "\ntext = \"" + text+
-                "\"\ntype = \"" + type +"\"\n"
-                +"user =  " + user +"\n"
-                + "upvotes = "+ upvotes + " }");
-    }
-
 
     public CatFact() {
+    }
+
+    @Override
+    public String toString() {
+
+        return ("{ id = " + id +
+                "\ntext = \"" + text +
+                "\"\ntype = \"" + type + "\"\n"
+                + "user =  " + user + "\n"
+                + "upvotes = " + upvotes + " }");
     }
 
     public String getId() {
